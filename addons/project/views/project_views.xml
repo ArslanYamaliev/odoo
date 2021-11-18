@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
         <!-- Top menu item -->
@@ -1089,6 +1089,7 @@
                                 <div class="o_kanban_record_bottom" t-if="!selection_mode">
                                     <div class="oe_kanban_bottom_left">
                                         <field name="priority" widget="priority"/>
+                                        <field name="activity_ids" widget="kanban_activity"/>
                                         <field name="activity_ids" widget="kanban_activity"/>
                                         <b t-if="record.rating_ids.raw_value.length">
                                             <span style="font-weight:bold;" class="fa fa-fw mt4 fa-smile-o text-success" t-if="record.rating_last_value.value == 5" title="Latest Rating: Satisfied" role="img" aria-label="Happy face"/>
